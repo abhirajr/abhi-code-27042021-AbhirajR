@@ -19,9 +19,17 @@ else if($bmi>24.5 && $bmi<=29.9)
 {
     $message = "You are overweight.";
 }
-else
+else if($bmi>30 && $bmi<=34.9)
 {
-    $message = "Be careful!!! You are obese.";
+    $message = "moderately obese!";
+}
+else if($bmi>35 && $bmi<=39.9)
+{
+	$message = "severely obese!";
+}
+else 
+{
+	$message = " very severely obese!";
 }
 
 $output = array(
